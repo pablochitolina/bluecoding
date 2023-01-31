@@ -22,6 +22,7 @@ public class ShortenService {
         if(!Objects.isNull(getUrlByShortUrl(url))){
             throw new IllegalArgumentException("Url already exists");
         }
+        //check for valid URL
 
         var uuid = UUID.randomUUID();
 
